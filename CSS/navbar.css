@@ -27,8 +27,9 @@ ul li {
   justify-content: space-between;
   align-items: center;
   padding: 7px 7%;
-  position: relative;
+  position: fixed;
   height: 70px;
+  width: 100%;
   background-color: var(--primary);
   z-index: 9999;
 }

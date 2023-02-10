@@ -1,6 +1,6 @@
 :root {
   --primary: #88e7ce;
-  --bg: #fff;
+  --bg: #f0f0f0;
 }
 
 * {
@@ -18,12 +18,18 @@ body {
   color: black;
 }
 
+ul li {
+  list-style: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 7px 3%;
+  padding: 7px 7%;
+  position: fixed;
   height: 70px;
+  width: 100%;
   background-color: var(--primary);
   z-index: 9999;
 }
@@ -32,18 +38,22 @@ body {
   height: 48px;
 }
 
+.navbar .navbar-nav ul li {
+  display: inline-block;
+  font-size: .89em;
+  margin: 0 1rem;
+  font-weight: 500;
+}
 .navbar .navbar-nav a {
   color: black;
-  display: inline-block;
-  font-size: 1em;
-  margin: 0 1rem;
 }
 
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.2rem;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.17em solid black;
+  border-radius: 50px;
   transform: scaleX(0);
   transition: 0.2s linear;
   -webkit-transform: scaleX(0);
@@ -64,7 +74,74 @@ body {
   -o-transform: scaleX(0.5);
 }
 
-.navbar .navbar-profile img {
-  margin-top: 8px;
+.profil-img { 
+  height: 45px;
+  cursor: pointer;
+}
+
+.sub-menu-profil {
+  position: absolute;
+  top: 100%;
+  right: 3%;
+  width: 270px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s;
+}
+.sub-menu-profil.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-info h4 {
+  font-weight: 500;
+  /* padding-left: 10px; */
+}
+.user-info img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link a {
+  display: flex;
+  align-items: center;
+  color: #525252;
+  margin: 12px 0;
+}
+.sub-menu-link p {
+  width: 100%;
+  font-size: .9em;
+}
+.sub-menu-link img {
   height: 40px;
+  padding: 8px;
+  margin-right: 15px;
+  /* padding: 8px; */
+}
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform .5s;
+}
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+.sub-menu-link:hover p {
+  font-weight: 500;
 }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | SIBETA</title>
+    <!-- Link Logo -->
+    <link rel="shortcut icon" href="img/logotok.png" type="image/x-icon" />
+    <!-- Link CSS Navbar -->
+    <link rel="stylesheet" href="CSS/navbar.css" />
+    <!-- Link CSS Dashboard -->
+    <link rel="stylesheet" href="CSS/dashboard.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="img/Logo-nav.png" />
+      </a>
+
+      <div class="navbar-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Pelajaran</a></li>
+          <li><a href="peringkat.html">Peringkat</a></li>
+          <li><a href="#">Bantuan</a></li>
+        </ul>
+      </div>
+
+      <img src="img/nav-profil.png" class="profil-img" onclick="toogleMenu()" />
+
+      <div class="sub-menu-profil" id="profil-img">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="img/nav-profil.png" />
+            <h4>Abdullah</h4>
+          </div>
+          <hr />
+
+          <div class="sub-menu-link">
+            <a href="dashboard.html">
+              <img src="img/dashboard.png" />
+              <p>Dashboard</p>
+              <span>></span>
+            </a>
+          </div>
+          <div class="sub-menu-link">
+            <a href="edit-profil.html">
+              <img src="img/profil.png" />
+              <p>Edit Profil</p>
+              <span>></span>
+            </a>
+          </div>
+          <div class="sub-menu-link">
+            <a href="#">
+              <img src="img/logout.png" />
+              <p>Keluar</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Info User Card Start -->
+    <div class="container-dashboard">
+      <div class="user-info-dashboard">
+        <div class="card">
+          <div class="left-card">
+            <div class="profil-img">
+              <img src="img/nav-akun.png" id="profil-img">
+              <p>Abdullah</p>
+              <p>Abdullah</p>
+            </div>
+          </div>
+          <div class="garis-batas">
+            <img src="img/line-berdiri.png">
+          </div>
+          <div class="mid-card">
+            <img src="img/training-done-count.png">
+              <p>10</p>
+              <p>Latihan diselesaikan</p>
+          </div>
+          <div class="right-card">
+            <img src="img/logo-penanda-completed.png">
+              <p>4</p>
+              <p>Pelajaran diselesaikan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info User Card End -->
+
+    <script src="js/dropdown-menu-profil.js"></script>
+  </body>
+</html>

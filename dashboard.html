@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="CSS/navbar.css" />
     <!-- Link CSS Dashboard -->
     <link rel="stylesheet" href="CSS/dashboard.css" />
+    <!-- Link CSS Footer -->
+    <link rel="stylesheet" href="CSS/footer.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -94,7 +96,7 @@
           </div>
           <div class="mid-card">
             <img src="img/training-done-count.png" />
-            <p>10</p>
+            <p>8</p>
             <p>Latihan diselesaikan</p>
           </div>
           <div class="garis-batas">
@@ -102,50 +104,118 @@
           </div>
           <div class="right-card">
             <img src="img/logo-penanda-completed.png" />
-            <p>4</p>
+            <p>2</p>
             <p>Pelajaran diselesaikan</p>
           </div>
         </div>
-        <!-- Info User Card End -->
+      </div>
+      <!-- Info User Card End -->
 
-        <hr />
+      <!-- progress belajar start -->
+      <div class="lanjutkan-pembelajaran">
+        <div class="txt-lanjut-belajar">
+          <img src="img/heading-content.png" />
+          <p>Lanjutkan Pelajaran</p>
+        </div>
 
-        <!-- progress belajar start -->
-        <div class="lanjutkan-pembelajaran">
-          <div class="txt-lanjut-belajar">
-            <img src="img/heading-content.png">
-            <p>Lanjutkan Pelajaran</p>
-          </div>
-          <div class="card-lanjut-belajar">
-            <div class="card-qalqalah">
-              <div class="left-card">
-                <div class="qalqalah-img">
-                  <img src="img/quran-2.png"/>
-                </div>
+        <div class="card-lanjut-belajar">
+          <div class="card-qalqalah">
+            <div class="left-card">
+              <div class="qalqalah-img">
+                <img src="img/quran-2.png" />
               </div>
-              <div class="mid-card">
+            </div>
+            <div class="mid-card">
+              <div class="berikutnya">
                 <p>Berikutnya - Study Qalqalah</p>
-                <p>Qalqalah Sugra</p>
-                <div class="animated-progress progress-green">
-                  <span data-progress="60"></span>
-                </div>
-
               </div>
-              <div class="right-card">
-                <img src="img/logo-penanda-completed.png" />
-                <p>4</p>
-                <p>Pelajaran diselesaikan</p>
+              <p>Qalqalah Sugra</p>
+              <div id="progress-container">
+                <div id="progress-bar"></div>
+              </div>
+            </div>
+            <div class="right-card">
+              <a href="#">
+                <div class="btn-lanjutkan">Lanjutkan</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-lanjut-belajar">
+          <div class="card-idgham">
+            <div class="left-card">
+              <div class="idgham-img">
+                <img src="img/quran-2.png" />
+              </div>
+            </div>
+            <div class="mid-card">
+              <div class="berikutnya">
+                <p>Berikutnya - Study Idgham</p>
+              </div>
+              <p>Idgham Bi Gunnah</p>
+              <div id="progress-container">
+                <div id="progress-bar"></div>
+              </div>
+            </div>
+            <div class="right-card">
+              <a href="#">
+                <div class="btn-lanjutkan">Lanjutkan</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- progress belajar End -->
+
+      <!-- belajar selesai start -->
+      <div class="selesai-pembelajaran">
+        <div class="txt-selesai-belajar">
+          <img src="img/heading-content.png" />
+          <p>Pelajaran Selesai</p>
+        </div>
+
+        <div class="card-lanjut-belajar">
+          <div class="card-qalqalah">
+            <div class="left-card">
+              <div class="qalqalah-img">
+                <img src="img/quran-2.png" />
+              </div>
+            </div>
+            <div class="mid-card">
+              <div class="berikutnya">
+                <p>Study Idhar</p>
+              </div>
+              <p>Idhar Halqi</p>
+              <div id="progress-container-selesai">
+                <div id="progress-bar-selesai"></div>
               </div>
             </div>
           </div>
         </div>
-        <!-- progress belajar End -->
 
-
+        <div class="card-lanjut-belajar">
+          <div class="card-idgham">
+            <div class="left-card">
+              <div class="idgham-img">
+                <img src="img/quran-2.png" />
+              </div>
+            </div>
+            <div class="mid-card">
+              <div class="berikutnya">
+                <p>Study Idgham</p>
+              </div>
+              <p>Idgham Bila Gunnah</p>
+              <div id="progress-container-selesai">
+                <div id="progress-bar-selesai"></div>
+                <!-- <span>selesai</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- progress selesai End -->
     </div>
-        
-
 
     <!-- Footer Start -->
     <footer>
@@ -182,6 +252,18 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- JS Menu Dropdown -->
     <script src="js/dropdown-menu-profil.js"></script>
+
+    <!-- JS progress -->
+    <script>
+      let progressBar = document.getElementById("progress-bar");
+      let totalLessons = 15;
+      let completedLessons = 7;
+      let progress = (completedLessons / totalLessons) * 100;
+
+      progressBar.style.width = progress + "%";
+    </script>
+
   </body>
 </html>

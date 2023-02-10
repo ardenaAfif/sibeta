@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>SIBETA</title>
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/navbar.css" />
 
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- feather Icon -->
     <script src="https://unpkg.com/feather-icons"></script>
-
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- Navbar Start -->
     <div class="navbar">
-        <a href="#" class="navbar-logo">
-            <img src="img/Logo-nav.png">
-        </a>
+      <a href="#" class="navbar-logo">
+        <img src="img/Logo-nav.png" />
+      </a>
 
-        <div class="navbar-nav">
-            <a href="#">Home</a>
-            <a href="#">Pelajaran</a>
-            <a href="#">Peringkat</a>
-            <a href="#">Bantuan</a>
+      <div class="navbar-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pelajaran</a></li>
+          <li><a href="#">Peringkat</a></li>
+          <li><a href="#">Bantuan</a></li>
+        </ul>
+      </div>
+
+      <img src="img/nav-profil.png" class="profil-img" onclick="toogleMenu()"/>
+
+      <div class="sub-menu-profil" id="profil-img">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="img/nav-profil.png" />
+            <h3>Hikmatyar</h3>
+          </div>
+          <hr />
+
+          <div class="sub-menu-link">
+            <a href="#">
+              <img src="img/profil.png" />
+              <p>Edit Profil</p>
+              <span>></span>
+            </a>
+          </div>
+          <div class="sub-menu-link">
+            <a href="#">
+              <img src="img/logout.png"/>
+              <p>Keluar</p>
+              <span>></span>
+            </a>
+          </div>
+
+          <!-- <a href="#" class="sub-menu-link">
+            <img src="img/logout.png">
+            <p>Keluar<p>
+            <span>></span>
+          </a> -->
         </div>
-
-        <a href="#" class="navbar-profile">
-            <img src="img/nav-profil.png" alt="">
-        </a>
+      </div>
     </div>
     <!-- Navbar End -->
 
     <!-- Feather Icon -->
     <script>
-        feather.replace()
+      feather.replace();
     </script>
 
-</body>
+    <!-- Dropdown menu profil -->
+    <script src="js/dropdown-menu-profil.js"></script>
+  </body>
 </html>

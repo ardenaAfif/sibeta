@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>SIBETA - Situs Belajar Tajwid Al Qur'an</title>
-
+    <title>Peringkat | SIBETA</title>
     <!-- Link Logo -->
-    <link rel="shortcut icon" href="img/logotok.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logotok.png" type="image/x-icon" />
     <!-- Link CSS Navbar -->
     <link rel="stylesheet" href="CSS/navbar.css" />
+    <!-- Link CSS Dashboard -->
+    <link rel="stylesheet" href="CSS/peringkat.css" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,9 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- feather Icon -->
-    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -39,7 +36,7 @@
         </ul>
       </div>
 
-      <img src="img/nav-profil.png" class="profil-img" onclick="toogleMenu()"/>
+      <img src="img/nav-profil.png" class="profil-img" onclick="toogleMenu()" />
 
       <div class="sub-menu-profil" id="profil-img">
         <div class="sub-menu">
@@ -65,7 +62,7 @@
           </div>
           <div class="sub-menu-link">
             <a href="#">
-              <img src="img/logout.png"/>
+              <img src="img/logout.png" />
               <p>Keluar</p>
               <span>></span>
             </a>
@@ -75,12 +72,18 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Feather Icon -->
-    <script>
-      feather.replace();
-    </script>
+    <!-- Development Process Start -->
+    <div class="development">
+      <div class="img-dev">
+        <img src="img/development.png" alt="" />
+      </div>
+      <div class="txt-dev">
+        <p>Mohon Maaf Atas Ketidaknyamanan Anda</p>
+        <p>Fitur ini sedang dalam tahap pengembangan</p>
+      </div>
+    </div>
+    <!-- Development Process End -->
 
-    <!-- Dropdown menu profil -->
     <script src="js/dropdown-menu-profil.js"></script>
   </body>
 </html>

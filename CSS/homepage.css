@@ -7,7 +7,8 @@
     height: 38px;
 }
 
-.home-banner .home-tittle h2 {
+.home-banner .home-tittle h3 {
+    padding-top: 8px;
     float: right;
     margin-left: 10px;
 }
@@ -32,24 +33,22 @@
 
 .home-banner .row .home-content p {
     font-size: 18px;
+    margin-top: 10px;
+    line-height: 40px;
 }
 
 .home-banner .row .home-content .home-list {
     background-color: #D9D9D9;
-    margin-top: 25px;
+    margin-top: 30px;
     height: 40px;
-    padding-top: 6px;
+    /* padding-top: 6px; */
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 .home-banner .row .home-content .home-list p {
     font-size: 15px;
     word-spacing: 50px;
-    background-color: D9D9D9;
+    background-color: #D9D9D9;
     text-align: center;
 }
 

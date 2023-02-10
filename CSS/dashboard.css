@@ -9,12 +9,13 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: black;
+  scroll-behavior: smooth;
 }
 
 .container-dashboard {
-  height: 300vh;
+  height: 230vh;
   /* width: 100%; */
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   padding: 120px 20px;
 }
 /* Card Info User Start */
@@ -22,7 +23,7 @@ body {
   margin-left: 60px;
   margin-bottom: 50px;
   display: flex;
-  background: #F4F4F4;
+  background: #f4f4f4;
   text-align: center;
   justify-content: space-between;
   padding: 60px;
@@ -35,7 +36,7 @@ body {
 .left-card img,
 .right-card img {
   height: 50px;
-  display: flexbox;
+  /* display: flexbox; */
 }
 .mid-card img {
   height: 40px;
@@ -44,7 +45,7 @@ body {
 }
 
 .left-card .profil-img #level {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .img-sibeta-actor {
@@ -65,7 +66,7 @@ body {
   margin-left: 60px;
   margin-bottom: 30px;
   /* display: flex; */
-  background: #F4F4F4;
+  background: #f4f4f4;
   /* text-align: center; */
   /* justify-content: space-between; */
   /* padding: 60px; */
@@ -79,7 +80,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: 70px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .txt-lanjut-belajar img {
   float: left;
@@ -87,17 +88,20 @@ body {
   margin-right: 10px;
 }
 .txt-lanjut-belajar p {
-  font-size: .9em;
+  font-size: 0.9em;
   font-weight: 500;
 }
 
+.card-lanjut-belajar .card-idgham,
 .card-lanjut-belajar .card-qalqalah {
   display: flex;
+  margin-bottom: 30px;
   /* justify-content: space-evenly; */
 }
 
+.card-lanjut-belajar .card-idgham .left-card,
 .card-lanjut-belajar .card-qalqalah .left-card {
-  background: #24D3C6;
+  background: #24d3c6;
   width: 180px;
   height: 170px;
   border-radius: 10px 0 0 10px;
@@ -106,10 +110,156 @@ body {
   align-items: center;
   justify-content: center;
 }
+.card-lanjut-belajar .card-idgham .idgham-img img,
 .card-lanjut-belajar .card-qalqalah .qalqalah-img img {
   height: 80px;
 }
 
+.card-lanjut-belajar .card-idgham .mid-card,
+.card-lanjut-belajar .card-qalqalah .mid-card {
+  padding: 26px;
+}
+.card-lanjut-belajar .card-idgham .mid-card .berikutnya,
+.card-lanjut-belajar .card-qalqalah .mid-card .berikutnya {
+  font-size: 0.8em;
+}
+.card-lanjut-belajar .card-idgham .mid-card p,
+.card-lanjut-belajar .card-qalqalah .mid-card p {
+  font-size: 1.1em;
+  padding-top: 9px;
+  font-weight: 500;
+}
 
+.card-lanjut-belajar .card-idgham .mid-card #progress-container,
+.card-lanjut-belajar .card-qalqalah .mid-card #progress-container {
+  width: 180px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.card-idgham .mid-card #progress-bar,
+.card-qalqalah .mid-card #progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #24d3c6;
+  border-radius: 5px;
+  transition: width 0.25s;
+}
+
+.card-idgham .right-card,
+.card-qalqalah .right-card {
+  /* display: flex; */
+  /* align-items: end; */
+  /* padding-top: 20px;
+  margin-left: 100px; */
+  padding-top: 100px;
+  padding-left: 90px;
+}
+.card-idgham .right-card .btn-lanjutkan,
+.card-qalqalah .right-card .btn-lanjutkan {
+  background: #47b5ff;
+  height: 40px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  color: #f9f9f9;
+}
 /* progress belajar End */
 
+
+/* progress selesai Start  */
+
+.card-selesai-belajar {
+  margin-left: 60px;
+  margin-bottom: 30px;
+  /* display: flex; */
+  background: #f4f4f4;
+  /* text-align: center; */
+  /* justify-content: space-between; */
+  /* padding: 60px; */
+  height: 170px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 8px #dddddd;
+}
+
+.txt-selesai-belajar {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+.txt-selesai-belajar img {
+  float: left;
+  height: 30px;
+  margin-right: 10px;
+}
+.txt-selesai-belajar p {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.card-selesai-belajar .card-idgham,
+.card-selesai-belajar .card-qalqalah {
+  display: flex;
+  margin-bottom: 30px;
+  /* justify-content: space-evenly; */
+}
+
+.card-selesai-belajar .card-idgham .left-card,
+.card-selesai-belajar .card-qalqalah .left-card {
+  background: #24d3c6;
+  width: 180px;
+  height: 170px;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-selesai-belajar .card-idgham .idgham-img img,
+.card-selesai-belajar .card-qalqalah .qalqalah-img img {
+  height: 80px;
+}
+
+.card-selesai-belajar .card-idgham .mid-card,
+.card-selesai-belajar .card-qalqalah .mid-card {
+  padding: 26px;
+}
+.card-selesai-belajar .card-idgham .mid-card .berikutnya,
+.card-selesai-belajar .card-qalqalah .mid-card .berikutnya {
+  font-size: 0.8em;
+}
+.card-selesai-belajar .card-idgham .mid-card p,
+.card-selesai-belajar .card-qalqalah .mid-card p {
+  font-size: 1.1em;
+  padding-top: 9px;
+  font-weight: 500;
+}
+
+.card-selesai-belajar .card-idgham .mid-card #progress-container-selesai,
+.card-selesai-belajar .card-qalqalah .mid-card #progress-container-selesai {
+  width: 180px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.card-idgham .mid-card #progress-bar-selesai,
+.card-qalqalah .mid-card #progress-bar-selesai {
+  height: 100%;
+  width: 100;
+  background-color: #24d3c6;
+  border-radius: 5px;
+  transition: width 0.25s;
+}
+
+/* progress selesai End  */

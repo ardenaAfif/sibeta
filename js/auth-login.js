@@ -20,18 +20,19 @@ function userRegister() {
     .createUserWithEmailAndPassword(username, email, password)
     .then(function () {
 
-    }).catch(function(error) {
-        var errorcode = error.code;
-        var errormsg = error.message;
+    })
+    .catch(function (error) {
+      var errorcode = error.code;
+      var errormsg = error.message;
     });
 }
 const auth = firebase.auth();
 function SignIn() {
-    var username = document.getElementById('username').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    const promise = auth.signInWithEmailAndPassword(email,password);
-    promise.catch(e=>alert(e.msg));
-    window.open("https://www.google.com","_self");
+  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  const promise = auth.signInWithEmailAndPassword(email, password);
+  promise.catch((e) => alert(e.msg));
+  window.open("https://www.google.com", "_self");
 }
 document.getElementById;

@@ -1,14 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    background-color: var(--bg);
-    color: black;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
-  
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: black;
+}
+
+.container-dashboard {
+  height: 300vh;
+  /* width: 100%; */
+  background: #f9f9f9;
+  padding: 120px 20px;
+}
+/* Card Info User Start */
+.card-info-user {
+  margin-left: 60px;
+  margin-bottom: 50px;
+  display: flex;
+  background: #F4F4F4;
+  text-align: center;
+  justify-content: space-between;
+  padding: 60px;
+  height: 200px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 8px #dddddd;
+}
+
+.left-card img,
+.right-card img {
+  height: 50px;
+  display: flexbox;
+}
+.mid-card img {
+  height: 40px;
+  display: flexbox;
+  margin-bottom: 10px;
+}
+
+.left-card .profil-img #level {
+  font-size: .8em;
+}
+
+.img-sibeta-actor {
+  float: right;
+  position: relative;
+  margin-right: 50px;
+  /* top: -10; */
+}
+
+.img-sibeta-actor img {
+  height: 300px;
+}
+
+/* Card Info User End */
+
+/* progress belajar start */
+.card-lanjut-belajar {
+  margin-left: 60px;
+  margin-bottom: 30px;
+  /* display: flex; */
+  background: #F4F4F4;
+  /* text-align: center; */
+  /* justify-content: space-between; */
+  /* padding: 60px; */
+  height: 170px;
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 4px 6px 8px #dddddd;
+}
+
+.txt-lanjut-belajar {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+.txt-lanjut-belajar img {
+  float: left;
+  height: 30px;
+  margin-right: 10px;
+}
+.txt-lanjut-belajar p {
+  font-size: .9em;
+  font-weight: 500;
+}
+
+.card-lanjut-belajar .card-qalqalah {
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.card-lanjut-belajar .card-qalqalah .left-card {
+  background: #24D3C6;
+  width: 180px;
+  height: 170px;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-lanjut-belajar .card-qalqalah .qalqalah-img img {
+  height: 80px;
+}
+
+
+/* progress belajar End */
+

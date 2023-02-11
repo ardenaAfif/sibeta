@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 .home-banner .home-tittle {
     display: inline-block;
     margin: 100px 150px 30px;

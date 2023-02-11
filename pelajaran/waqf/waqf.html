@@ -103,7 +103,8 @@
         <div class="card-content">
           <h4>WAQF</h4>
           <p>
-            Waqaf adalah menghentikan sejenak bacaan Al-Qur’an dengan tujuan untuk bernapas disertai niat untuk kembali melanjutkan bacaan.
+            Waqaf adalah menghentikan sejenak bacaan Al-Qur’an dengan tujuan
+            untuk bernapas disertai niat untuk kembali melanjutkan bacaan.
           </p>
         </div>
         <a href="#">
@@ -112,6 +113,38 @@
       </div>
     </div>
     <!-- pelajaran end -->
+
+    <!-- Slider Materi Start -->
+    <div id="slider-popup" class="slider-popup">
+      <div class="slide active">
+        <img src="../../img/bg_slide.png" alt="Slide 1" />
+        <div class="slide-content">
+          <h1>Slide 1</h1>
+          <p>Ini adalah slide pertama.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../../img/bg_slide.png" alt="Slide 2" />
+        <div class="slide-content">
+          <h1>Slide 2</h1>
+          <p>Ini adalah slide kedua.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../../img/bg_slide.png" alt="Slide 3" />
+        <div class="slide-content">
+          <h1>Slide 3</h1>
+          <p>Ini adalah slide ketiga.</p>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="close" onclick="closeSlider()">&times;</a>
+    </div>
+
+    <button id="open-slider" onclick="openSlider()">Open Slider</button>
+
+    <!-- Slider Materi End -->
 
     <!-- footer start -->
     <footer>
@@ -162,6 +195,9 @@
     <!-- JS Scroll to Top -->
     <script src="../../js/scroll-top.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+    <!-- JS Slider Materi -->
+    <script src="../../js/slider.js"></script>
 
     <!-- Dropdown menu profil -->
     <script src="../../js/dropdown-menu-profil.js"></script>

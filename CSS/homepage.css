@@ -3,8 +3,8 @@
 }
 
 .home-banner {
-    position: relative;
-    margin-top: 100px;
+    /* position: absolute; */
+    padding-top: 140px;
 }
 
 .home-banner .row {
@@ -52,7 +52,7 @@
 
 .list-lesson .home-tittle {
     display: inline-block;
-    margin: 100px 0 0 155px;
+    margin: 50px 0 0 155px;
 }
 
 .list-lesson .home-tittle img {

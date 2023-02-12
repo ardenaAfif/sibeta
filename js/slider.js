@@ -30,17 +30,12 @@ function showSlides(n) {
     document.getElementsByClassName("prev")[0].style.display = "block";
   }
 
-  if (slideIndex == slides.length) {
-    document.getElementsByClassName("next")[0].style.display = "none";
-  } else {
-    document.getElementsByClassName("next")[0].style.display = "block";
-  }
 }
 
 function openSlider() {
-  document.getElementById("slider-popup").style.display = "block";
+  document.getElementById("slide").style.display = "block";
 }
 
 function closeSlider() {
-  document.getElementById("slider-popup").style.display = "none";
+  document.getElementById("slide").style.display = "none";
 }

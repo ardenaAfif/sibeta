@@ -81,11 +81,12 @@
 }
 
 /* Slider Start */
-#popup-details:target {
+/* idz - har start */
+#popup-idzhar:target {
     opacity: 1;
     visibility: visible;
 }
-#popup-details:target .popup-container {
+#popup-idzhar:target .popup-container {
     opacity: 1;
 }
 
@@ -175,5 +176,6 @@
 .prev {
     left: 5%;
 }
+/* idz - har end */
 
   /* Slider End */

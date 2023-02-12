@@ -168,6 +168,20 @@
     justify-content: space-between;
 }
 
+.contoh-idhar-khalqi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contoh-idhar-khalqi img {
+    margin: 10px;
+}
+
+.contoh-idhar-wajib img {
+    margin: 10px;
+}
+
 
 .popup-close a:link,
 .popup-close a:visited {

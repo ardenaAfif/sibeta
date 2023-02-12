@@ -1,28 +1,10 @@
 .user-settings-container {
-  display: flex;
-}
-
-.sidebar {
-  width: 200px;
-  background-color: #f1f1f1;
-  padding: 20px;
-}
-
-.section-options button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #fff;
-  margin-bottom: 10px;
-}
-
-.selected {
-  background-color: #ddd;
+  padding-top: 100px;
 }
 
 .main-content {
   flex: 1;
-  padding: 20px;
+  padding: 0px 80px 80px 80px;
 }
 
 .form-group {
@@ -52,4 +34,8 @@ button[type="submit"] {
   font-size: 16px;
   cursor: pointer;
   margin-top: 20px;
+}
+
+.section-2 h2 {
+  margin-top: 80px;
 }

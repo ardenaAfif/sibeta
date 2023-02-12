@@ -80,11 +80,11 @@
 }
 
 /* Slider Start */
-#popup-details:target {
+#popup-qalqalah-sughra:target {
   opacity: 1;
   visibility: visible;
 }
-#popup-details:target .popup-container {
+#popup-qalqalah-sughra:target .popup-container {
   opacity: 1;
 }
 

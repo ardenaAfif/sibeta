@@ -30,6 +30,11 @@ function showSlides(n) {
     document.getElementsByClassName("prev")[0].style.display = "block";
   }
 
+  if (slideIndex == slides.length) {
+    document.getElementsByClassName("next")[0].style.display = "none";
+  } else {
+    document.getElementsByClassName("next")[0].style.display = "block";
+  }
 }
 
 function openSlider() {

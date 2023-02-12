@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>SIBETA - Situs Belajar Tajwid Al Qur'an</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../../CSS/pelajaran/nunsukundantanwin/idzhar.css">
+
+    <!-- Link Logo -->
+    <link
+      rel="shortcut icon"
+      href="../../img/logotok.png"
+      type="image/x-icon"
+    />
+
+    <!-- Link CSS Navbar -->
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+
+    <!-- Link CSS FOOTER -->
+    <link rel="stylesheet" href="../../CSS/footer.css" />
+
+    <!-- Link CSS Scroll to Top -->
+    <link rel="stylesheet" href="../../CSS/scroll-top.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="../../img/Logo-nav.png" />
+      </a>
+
+      <div class="navbar-nav">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="#">Pelajaran</a></li>
+          <li><a href="peringkat.html">Peringkat</a></li>
+        </ul>
+      </div>
+
+      <img
+        src="../../img/nav-profil.png"
+        class="profil-img"
+        onclick="toogleMenu()"
+      />
+
+      <div class="sub-menu-profil" id="profil-img">
+        <div class="sub-menu">
+          <div class="user-info">
+            <img src="../../img/nav-profil.png" />
+            <h4>Abdullah</h4>
+          </div>
+          <hr />
+
+          <div class="sub-menu-link">
+            <a href="dashboard.html">
+              <img src="../../img/dashboard.png" />
+              <p>Dashboard</p>
+              <span>></span>
+            </a>
+          </div>
+          <div class="sub-menu-link">
+            <a href="edit-profil.html">
+              <img src="../../img/profil.png" />
+              <p>Edit Profil</p>
+              <span>></span>
+            </a>
+          </div>
+          <div class="sub-menu-link">
+            <a href="#">
+              <img src="../../img/logout.png" />
+              <p>Keluar</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- pelajaran start -->
+    <div class="nunsukun-tanwin">
+      <h2>NUN SUKUN DAN TANWIN</h2>
+
+      <div class="card">
+        <div class="card-bg-img">
+          <img src="../../img/quran-2.png" alt="" />
+        </div>
+        <div class="card-content">
+          <h4>IZH-HAR</h4>
+          <p>
+            Izhar halqi secara istilah adalah mengeluarkan setiap huruf dari makhrajnya tanpa dengung (ghunnah) pada huruf yang diizharkan.
+          </p>
+        </div>
+        <a href="">
+          <button class="card-btn">Mulai</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-bg-img">
+          <img src="../../img/quran-2.png" alt="" />
+        </div>
+        <div class="card-content">
+          <h4>ID-GHAM BI-GHUNNAH</h4>
+          <p>
+            Idgham bighunnah adalah membunyikan nun mati atau tanwin dengan memasukkannya pada huruf setelahnya dan dibaca dengan mendengung.
+          </p>
+        </div>
+        <a href="#popup-idgham-bigunnah">
+          <button class="card-btn">Mulai</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-bg-img">
+          <img src="../../img/quran-2.png" alt="" />
+        </div>
+        <div class="card-content">
+          <h4>ID-GHAM BILA GHUNNAH</h4>
+          <p>
+            Idgham Bilaghunnah artinya melebur tanpa dengung atau memasukkan huruf nun mati atau tanwin ke dalam huruf sesudahnya tanpa disertai suara yang mendengung.
+          </p>
+        </div>
+        <a href="#popup-details">
+          <button class="card-btn">Mulai</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-bg-img">
+          <img src="../../img/quran-2.png" alt="" />
+        </div>
+        <div class="card-content">
+          <h4>IQLAB</h4>
+          <p>
+            iqlab menurut istilah ilmu tajwid, iqlab artinya mengganti bunyi bacaan nun mati atau tanwin menjadi mim.
+          </p>
+        </div>
+        <a href="#popup-details">
+          <button class="card-btn">Mulai</button>
+        </a>
+      </div>
+      
+      <div class="card">
+        <div class="card-bg-img">
+          <img src="../../img/quran-2.png" alt="" />
+        </div>
+        <div class="card-content">
+          <h4>IKHFAA’ HAQIQI</h4>
+          <p>
+            Secara bahasa, ikhfa artinya menyamarkan, semenatar syafawi berasal dari kata syafatun yang berarti bibir.
+          </p>
+        </div>
+        <a href="#popup-details">
+          <button class="card-btn">Mulai</button>
+        </a>
+      </div>
+    </div>
+    <!-- pelajaran end -->
+
+    <!-- Slide Pelajaran Nun sukun dan tanwin start -->
+    <!-- Slide idz - har start -->
+    <div class="popup-details-idzhar" id="popup-idzhar">
+      <div class="popup-container">
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Apa itu idz - har?</p>
+            </div>
+          </div>
+          <div class="popup__content-1">
+            <p>Izhar mengandung makna ‘memperjelas atau menerangkan’ secara bahasa.
+              dan halqi menurut bahasa artinya ‘tenggorokan atau kerongkongan’.
+              </p>
+              <p>Izhar halqi secara istilah adalah mengeluarkan setiap huruf dari makhrajnya tanpa dengung (ghunnah) pada huruf yang diizharkan.</p>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094;   Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close"> 
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Huruf - huruf idz - har</p>
+            </div>
+          </div>
+          <div class="popup__content-2">
+            <h3>Ada 6 huruf yang termasuk kategori Idz - har</h3>
+            <div class="huruf">
+              <img src="../../img/hijaiyah/khaa.png" alt="">
+              <img src="../../img/hijaiyah/haa.png" alt="">
+              <img src="../../img/hijaiyah/ghain.png" alt="">
+              <img src="../../img/hijaiyah/ain.png" alt="">
+              <img src="../../img/hijaiyah/ha.png" alt="">
+              <img src="../../img/hijaiyah/hamzah.png" alt="">
+            </div>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094;   Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Macam - macam idz - har</p>
+            </div>
+          </div>
+          <div class="popup__content-3">
+            <h3>Ada 3 macam di dalam idhar</h3>
+            <div class="macam">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar-khalqi.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar-syafawi.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar-wajib.png" alt="">
+            </div>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094; Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR KHALQI</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Apa itu idz - har khalqi?</p>
+            </div>
+          </div>
+          <div class="popup__content-1">
+            <p>Idhar halqi merupakan hukum bacaan dalam ilmu    tajwid yang terjadi apabila ada huruf nun sukun atau tanwin bertemu dengan salah satu dari keenam   huruf idhar. 
+            Cara membacanya harus jelas atau terang tanpa dengung.
+              </p>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094;   Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR KHALQI</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Contoh idz - har - khalqi</p>
+            </div>
+          </div>
+          <div class="popup__content-3">
+            <h3>Apa saja contoh dari idhar - khalqi</h3>
+            <div class="contoh-idhar-khalqi">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar halqi/1.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar halqi/2.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar halqi/3.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar halqi/4.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar halqi/5.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar halqi/6.png" alt="">
+            </div>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094; Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR WAJIB</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Apa itu idz - har wajib?</p>
+            </div>
+          </div>
+          <div class="popup__content-1">
+            <p>Idhar wajib adalah hukum bacaan yang terjadi apabila ada nun sukun atau tanwin bertemu dengan huruf-huruf idhar wajib yakni ya’, wawu, nun dan mim dalam satu kalimat yang bersambung.
+              Karena masuk kategori idhar, maka cara baca hukum idhar wajib pun harus jelas alias tanpa ghunnah.
+              </p>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094;   Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR WAJIB</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Contoh idz - har - wajib</p>
+            </div>
+          </div>
+          <div class="popup__content-3">
+            <h3>Apa saja contoh dari idhar - wajib</h3>
+            <div class="contoh-idhar-wajib">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar wajib/1.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar wajib/2.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar wajib/3.png" alt="">
+            </div>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094; Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR SYAFAWI</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Apa itu idz - har syafawi?</p>
+            </div>
+          </div>
+          <div class="popup__content-1">
+            <p>Hukum bacaan idhar syafawi adalah hukum dalam ilmu tajwid yang terjadi apabila ada huruf mim sukun bertemu dengan seluruh huruf hijaiyah kecuali mim dan ba’.
+
+              Konsep idhar syafawi sama sekali tidak berhubungan dengan nun sukun dan tanwin. Namun demikian, cara membacanya juga harus jelas dan terang seperi halnya idhar halqi dan idhar wajib.
+              
+              </p>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094;   Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+        <div class="slide">
+          <div class="popup-close">
+            <a href="../nunsukundantanwin/nunsukundantanwin.html">&times;</a>
+          </div>
+          <div class="popup-header">
+            <div class="header-jdl">
+              <p>IDZHAR SYAFAWI</p>
+            </div>
+            <div class="header-sub-jdl">
+              <p>Contoh idz - har - syafawi</p>
+            </div>
+          </div>
+          <div class="popup__content-3">
+            <h3>Apa saja contoh dari idhar - syafawi</h3>
+            <div class="contoh-idhar-wajib">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar syafawi/1.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar syafawi/2.png" alt="">
+              <img src="../../img/contoh-ayat/nunsukundantanwin/idhar syafawi/3.png" alt="">
+            </div>
+          </div>
+          <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094; Sebelumnya</a>
+          <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+        </div>
+
+      </div>
+    </div>
+    <!-- Slide idz - har end -->
+    <!-- Slide Pelajaran Nun sukun dan tanwin start End -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="row">
+        <div class="alamat">
+          <img src="../../img/Logo-nav.png" alt="" />
+          <p>
+            Jl. Raya Siman (Universitas <br />
+            Darussalam Gontor), Demangan, <br />
+            Siman, Ponorogo, Jawa Timur 63471
+          </p>
+        </div>
+
+        <div class="dukungan">
+          <p style="font-weight: bold">Dukungan</p>
+          <p>Tentang Kami</p>
+          <p>Ketentuan</p>
+          <p>Kebijakan Privasi</p>
+        </div>
+
+        <div class="kontak-kami">
+          <p style="font-weight: bold">Kontak Kami</p>
+          <p>
+            Email: <br />
+            sibeta@unida.gontor.ac.id
+          </p>
+          <p>
+            No. Hp (Whatsapp): <br />
+            +62 85747272320 - Admin
+          </p>
+        </div>
+      </div>
+      <h5>Copyright © 2022 Sibeta. All Rights Reserved.</h5>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Scroll On Top Start -->
+    <button id="scroll-top-button" onclick="scrollToTop()">
+      <img src="../../img/slide-up.png" alt="up" />
+    </button>
+    <!-- Scroll On Top End -->
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JS Scroll to Top -->
+    <script src="../../js/scroll-top.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
+
+    <!-- Dropdown menu profil -->
+    <script src="../../js/dropdown-menu-profil.js"></script>
+
+    <!-- JS Slider Materi -->
+    <script src="../../js/slider.js"></script>
+
+  </body>
+</html>

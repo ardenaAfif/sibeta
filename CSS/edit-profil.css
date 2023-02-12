@@ -1,3 +1,37 @@
+.upload{
+  width: 100px;
+  position: relative;
+  margin: auto;
+}
+
+.upload img{
+  border-radius: 50%;
+  border: 6px solid #c3c3c3;
+}
+
+.upload .round{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #c3c3c3;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload .round input[type = "file"]{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+  cursor: pointer;
+}
+
 .user-settings-container {
   padding-top: 100px;
 }
@@ -29,6 +63,22 @@ button[type="submit"] {
   width: 100%;
   padding: 10px;
   background-color: #4caf50;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+button[type="submit"]:hover {
+  width: 100%;
+  padding: 10px;
+  background-color: #88E7CE;
   color: #fff;
   border: none;
   font-size: 16px;

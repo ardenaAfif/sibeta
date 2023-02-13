@@ -93,6 +93,10 @@ html {
     height: 150px;
 }
 
+.list-lesson .row .lesson-card-2 .card-jdl img {
+    height: 150px;
+}
+
 .list-lesson .row .lesson-card-1:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);

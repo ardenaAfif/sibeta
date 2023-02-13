@@ -89,6 +89,9 @@ html {
     -ms-transition: ease-in-out.4s;
     -o-transition: ease-in-out.4s;
 }
+.list-lesson .row .lesson-card-1 img {
+    height: 20px;
+}
 
 .list-lesson .row .lesson-card-1:hover {
     transform: scale(1.05);

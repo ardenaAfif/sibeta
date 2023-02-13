@@ -71,7 +71,7 @@ html {
     margin: 50px 100px 80px;
 }
 
-.list-lesson .row .lesson-card-1 {
+.list-lesson .row .lesson-card {
     height: 280px;
     width: 210px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -89,15 +89,15 @@ html {
     -ms-transition: ease-in-out.4s;
     -o-transition: ease-in-out.4s;
 }
-.list-lesson .row .lesson-card-1 .card-jdl img {
+.list-lesson .row .lesson-card .card-jdl img {
     height: 150px;
 }
-
-.list-lesson .row .lesson-card-2 .card-jdl img {
-    height: 150px;
+.list-lesson .row .lesson-card .card-jdl h3 {
+    line-height: 20px;
 }
 
-.list-lesson .row .lesson-card-1:hover {
+
+.list-lesson .row .lesson-card:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -105,7 +105,7 @@ html {
     -o-transform: scale(1.05);
 }
 
-.list-lesson .row .lesson-card-2 {
+.list-lesson .row .lesson-card {
     height: 280px;
     width: 210px;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -120,7 +120,7 @@ html {
     transition: ease-in-out.4s;
 }
 
-.list-lesson .row .lesson-card-2:hover {
+.list-lesson .row .lesson-card:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
@@ -132,12 +132,7 @@ html {
     margin-bottom: 15px;
 }
 
-.list-lesson .row .lesson-card-2 img {
-    margin-bottom: 15px;
-}
 
-.list-lesson .row .lesson-card-1 .lesson-card-info h5,
-.list-lesson .row .lesson-card-2 .lesson-card-info h5 {
-    float: right;
+.list-lesson .row .lesson-card .lesson-card-info h5 {
     margin-top: 7px;
 }

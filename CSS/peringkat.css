@@ -11,27 +11,24 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: black;
-  height: 100vh;
 }
 
 .development {
-
+  width: 100%;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 10%;
+  padding-left: 190px;
+  height: 100vh;
+
 }
 .development img {
     height: 200px;
 }
-.txt-dev {
-    margin-top: 30px;
-}
-.txt-dev p {
-    font-weight: 400;
-    font-size: 1.3em;
-}
+
 .home-banner .row {
   display: flex;
-  margin: 0 auto 0;
+  align-items: center;
+  justify-content: center;
   background-color: #DDDD;
   width: 80%;
   padding: 40px;
@@ -48,26 +45,11 @@ body {
 }
 
 .home-banner .row .home-content p {
-  font-size: 18px;
-  margin-top: 10px;
-  line-height: 40px;
-}
-
-.home-banner .row .home-content .home-list {
-  background-color: #D9D9D9;
-  margin-top: 30px;
-  height: 40px;
-  /*padding-top: 6px;
-  */border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.home-banner .row .home-content .home-list p {
   font-size: 15px;
-  word-spacing: 50px;
-  background-color: #D9D9D9;
-  text-align: center;
+  margin-top: 10px;
+  line-height: 30px;
+}
+.home-banner .row .home-content .dalil-arab {
+  padding: 20px 0;
+  font-size: 1.4em;
 }

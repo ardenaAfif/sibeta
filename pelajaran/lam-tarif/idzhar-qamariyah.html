@@ -8,7 +8,10 @@
     <title>SIBETA - Situs Belajar Tajwid Al Qur'an</title>
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../../CSS/pelajaran/lam-tarif/lam-tarif.css" />
+    <link
+      rel="stylesheet"
+      href="../../CSS/pelajaran/lam-tarif/idzhar-qamariyah.css"
+    />
 
     <!-- Link Logo -->
     <link
@@ -94,43 +97,94 @@
 
     <!-- pelajaran start -->
     <div class="nunsukun-tanwin">
-      <h2>LAM TA'RIF</h2>
+      <h2>HAL LAM TEBAL DAN LAM TIPIS</h2>
 
       <div class="card">
         <div class="card-bg-img">
           <img src="../../img/quran-2.png" alt="" />
         </div>
         <div class="card-content">
-          <h4>IZH-HAR QAMARIYAH</h4>
+          <h4>LAM TEBAL</h4>
           <p>
-            Idhar Qamariyah adalah suatu kaidah tajwid yang mengatur bagaimana
-            huruf Idhar harus dibaca jika terdapat dalam sebuah kata.
+            Apabila ada huruf Lam (ل ) dalam lafzul jalalah ( الله ) yang didahului oleh huruf yang berharakat fathah ( ـَـ ) atau dammah ( ـُـ ), Maka harus dibaca tafkhiim atau tebal.
           </p>
         </div>
-        <a href="idzhar-qamariyah.html">
+        <a href="lam-tafkhim.html">
           <button class="card-btn">Mulai</button>
         </a>
-      </div>
+      </div>   
 
       <div class="card">
         <div class="card-bg-img">
           <img src="../../img/quran-2.png" alt="" />
         </div>
         <div class="card-content">
-          <h4>IDGHAM SYAMSIYAH</h4>
+          <h4>LAM TIPIS</h4>
           <p>
-            Idgham syamsiah terjadi apabila huruf alif dan lam bertemu dengan
-            salah satu huruf syamsiah. Cara membaca idgham syamsiah yakni
-            dimasukkan ke huruf syamsiah, sehingga huruf alif dan lam tidak
-            terbaca lagi.
+            harus membaca huruf lam pada lafal Allah ( اللّٰهُ ) dengan tipis yaitu dengan cara mengangkat lidah keatas dengan suara rendah.
           </p>
         </div>
-        <a href="#">
+        <a href="lam-tarqiq.html">
           <button class="card-btn">Mulai</button>
         </a>
       </div>
+
     </div>
     <!-- pelajaran end -->
+
+    <!-- Slide Pelajaran Nun sukun dan tanwin start -->
+    <!-- Slide idgham - bigunnah start -->
+    <div class="popup-details-idzhar" id="popup-idzhar">
+        <div class="popup-container">
+  
+          <div class="slide">
+            <div class="popup-close">
+              <a href="../lam-tarif/lam-tarif.html">&times;</a>
+            </div>
+            <div class="popup-header">
+              <div class="header-jdl">
+                <p>IDZHAR QAMARIYAH</p>
+              </div>
+              <div class="header-sub-jdl">
+                <p>Apa itu idzhar qamariyah?</p>
+              </div>
+            </div>
+            <div class="popup__content-1">
+              <p>Secara bahasa izhar artinya jelas dan Qomariyah artinya sebangsa Rembulan. Sedangkan menurut istilah didalam hukum lam ta'rif. Izhar Qomariah adalah apabila ada huruf Alif dan Huruf Lam “الْ” bertemu dengan salah satu huruf Izhar Qomariah yang ada 14 yakni “اَبْغِ حَجَّكَ وَخَفْ عَقِيْمَهْ “.
+              </p>
+            </div>
+            <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094;   Sebelumnya</a>
+            <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+          </div>
+  
+          <div class="slide">
+              <div class="popup-close">
+                <a href="../lam-tarif/lam-tarif.html">&times;</a>
+              </div>
+              <div class="popup-header">
+                <div class="header-jdl">
+                  <p>IDZHAR QOMARIYAH</p>
+                </div>
+                <div class="header-sub-jdl">
+                  <p>Contoh idzhar qomariyah</p>
+                </div>
+              </div>
+              <div class="popup__content-3">
+                <h3>Apa saja contoh dari idzhar qomariyah</h3>
+                <div class="contoh-idhar-wajib">
+                  <img src="../../img/contoh-ayat/lamta'rif/idzharqomariyah/1.png" alt="">
+                  <img src="../../img/contoh-ayat/lamta'rif/idzharqomariyah/2.png" alt="">
+                  <img src="../../img/contoh-ayat/lamta'rif/idzharqomariyah/3.png" alt="">
+                </div>
+              </div>
+              <a class="prev-idzhar" onclick="plusSlides(-1)">&#10094; Sebelumnya</a>
+              <a class="next-idzhar" onclick="plusSlides(1)">Selanjutnya  &#10095; </a>
+            </div>
+  
+        </div>
+      </div>
+      <!-- Slide idgham - bigunnah end -->
+      <!-- Slide Pelajaran Nun sukun dan tanwin start End -->
 
     <!-- footer start -->
     <footer>
@@ -173,16 +227,19 @@
     </button>
     <!-- Scroll On Top End -->
 
+    <!-- JS Scroll to Top -->
+    <script src="../../js/scroll-top.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+
     <!-- Feather Icon -->
     <script>
       feather.replace();
     </script>
 
-    <!-- JS Scroll to Top -->
-    <script src="../../js/scroll-top.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-
     <!-- Dropdown menu profil -->
     <script src="../../js/dropdown-menu-profil.js"></script>
+
+    <!-- JS Slider Materi -->
+    <script src="../../js/slider.js"></script>
   </body>
 </html>
